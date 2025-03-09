@@ -5,7 +5,7 @@ function searchPapers() {
         return;
     }
 
-    fetch(`http://127.0.0.1:5000/search?q=${query}`)
+    fetch(`https://shabamaha-api.replit.app/search?q=${query}`)
         .then(response => response.json())
         .then(data => {
             let resultsDiv = document.getElementById("results");
