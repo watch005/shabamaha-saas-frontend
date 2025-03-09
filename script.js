@@ -5,7 +5,7 @@ function searchPapers() {
         return;
     }
 
-    fetch(`https://shabamaha-api.vercel.app/search?q=${query}`)
+    fetch(`https://shabamaha-api.vercel.app`)
         .then(response => response.json())
         .then(data => {
             let resultsDiv = document.getElementById("results");
